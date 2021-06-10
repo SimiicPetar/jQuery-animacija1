@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#button").click(function(){
+				$("#p").toggle();
+			});
+		});
+
+		$(function(){
+			$("#button2").click(function(){
+
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow");
+				$("#div3").fadeToggle(2500);
+				
+
+			});
+		});
+		$(function(){
+			$("#panel1").click(function(){
+
+				$("#panel2").slideToggle("slow");//slideDown, slideUp, slideToggle
+
+			});
+		});
+		$(function(){
+			$("#buttonn").click(function(){
+				$("#divv").animate({left:'300px', opacity:'0.5', height: '120px', width: '120px'});
+				$("#divv").animate({left:'10px', opacity:'1', height: '80px', width: '80px'});
+			});
+		});
+		$(function(){
+			$("#buttonr").click(function(){
+
+				var div=$("#divr");
+			 	div.animate({bottom:'40px' });
+				
+				div.animate({right:'40px' });
+				div.animate({top:'40px' });
+				
+				div.animate({left:'40px' });
+				div.animate({top:'650px' });
+
+				
+			});
+		});
+
+		$(function(){
+			$("#p1").click(function(){
+				$("#p2").show('slow');
+
+			});
+		});
+		$(function(){
+			$("#p3").click(function(){
+				$("#p2").hide('slow');
+
+			});
+		});
+		
+		
+		$(function(){
+			$("#bn1").click(function(){
+				$("#text1").show('slow');
+
+			});
+		});
+		$(function(){
+			$("#bn2").click(function(){
+				$("#text2").show('slow');
+
+			});
+		});
+		$(function(){
+			$("#bn3").click(function(){
+				$("#text1").hide('slow');
+				$("#text2").hide('slow');
+
+			});
+		});
+
+
+
+	</script>
+</head>
+<body>
+	<p id="p">qweasdzxc</p>
+	<button id="button">prikazi sakri</button><br><br>
+
+
+
+	<button id="button2">prikazi div elemente(fade in)</button> <br><br>
+
+	<div id="div1" style="width: 50px;height: 50px;display: none;background-color: red;"></div>
+	<div id="div2" style="width: 50px;height: 50px;display: none;background-color: green;"></div>
+	<div id="div3" style="width: 50px;height: 50px;display: none;background-color: blue;"></div>
+
+
+	<br><br>
+	<div id="panel1" style="padding: 4px; text-align: center;background-color: yellow;border: 1px solid black;">Prikazi sakrij podatke</div>
+	<div id="panel2" style="padding: 50px; text-align: center;background-color: yellow;border: 1px solid black;display: none;">Prikaz nekih podataka</div>
+
+	<br><br><br><br>
+
+
+
+	<div id="p1" style="padding: 4px; text-align: center;background-color: black;border: 1px solid black;color:#ff0;"><b>SHOW</b></div>
+
+	<div id="p2" style="padding: 50px; text-align: center;background-color: black;border: 1px solid black;display: none;">
+		<button id="bn1" style="border-radius: 10px;background-color: white;">text</button> 
+		<button style="border-radius: 10px;background-color: white;" id="bn2">text</button >
+		 <button style="border-radius: 10px;background-color: white;" id="bn3">hide text</button>
+
+		<p id="text1" style="display: none;color: #ff0;">asdqwezxcasedawe</p> 
+		<p id="text2" style="display: none;color: #ff0;">asdqwezxcasedawe</p>
+	</div>
+
+	<div id="p3" style="padding: 4px; text-align: center;background-color: black;border: 1px solid black;color:#ff0;"><b>HIDE</b></div>
+
+
+
+
+	<br><br>
+	<button id="buttonn">Zapocni animaciju</button><br><br>
+	<div id="divv" style="background-color: red;width: 80px;height: 80px; position: absolute;"></div>
+<br><br><br><br><br><br><br>
+	<button id="buttonr">Zapocni animaciju</button><br><br>
+	<div id="divr" style="background-color: red;width: 80px;height: 80px; position: absolute;"></div>
+
+</body>
+</html>
+
